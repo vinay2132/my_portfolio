@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <Vinay />  Internships | Work Experiences</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo-1.png">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <ul class='slider'>
+          <li class='item' style="background-image: url('img/Vinay_Internship_completion_certificate.doc.jpg')">
+            <div class='content'>
+              <h2 class='title'>"ROBOKALAM | Web Development Intern"</h2>
+              <p class='description'> 
+                I successfully completed a Web Development internship at ROBOKALAM, showcasing proficiency in Backend development for their landing page and learning management system. Demonstrated strong responsibility, sincerity, and a keen aptitude for learning, with excellent coordination and communication skills. </p>
+              <!-- <button>Read More</button> -->
+            </div>
+          </li>
+          <li class='item' style="background-image: url('img/Copy of internship certificate  .docx.jpg')">
+            <div class='content'>
+              <h2 class='title'>"Codeproofs Private Limited"</h2>
+              <p class='description'>I excelled in my Software Development internship at Codeproofs Private Limited, demonstrating strong project management skills, technical proficiency, and maintaining a professional and ethical approach throughout the internship.</p>
+              <!-- <button>Read More</button> -->
+            </div>
+          </li>
+          <li class='item' style="background-image: url('img/Internship Letter_Vinay1.jpg')">
+            <div class='content'>
+              <h2 class='title'>"Vruksh Ecosystem Foundation "</h2>
+              <p class='description'> Embarked on a rewarding internship as a Web Developer at Vruksh Ecosystem Foundation, contributing to web page design, UI/UX coding, and code maintenance under the guidance of the Tech Department. Excited to apply and enhance my skills in a dynamic work environment. </p>
+              <!-- <button>Read More</button> -->
+            </div>
+          </li>
+          <li class='item' style="background-image: url('img/OfferL-OW00023.jpg')">
+            <div class='content'>
+              <h2 class='title'>"Web Developer at Oneline Works"</h2>
+              <p class='description'>
+                Thrilled to accept an internship as a Web Developer at Oneline Works, where I contributed remotely to the Technical Engineering Department. Successfully completed a three-month internship, gaining valuable experience in web development and maintaining confidentiality of proprietary information.</p>
+              <!-- <button>Read More</button> -->
+            </div>
+          </li>
+          <li class='item' style="background-image: url('img/Screenshot\ 2023-12-29\ at\ 5.17.44\ PM.jpg')">
+            <div class='content'>
+              <h2 class='title'>"Cognizant Internship"</h2>
+              <p class='description'>
+                Engaged in a pivotal Cognizant Internship focused on skill development, including comprehensive learning modules, hands-on exercises, and project work. Successfully completing this program is a prerequisite for post-joining training and project allocation.</p>              <!-- <button>Read More</button> -->
+            </div>
+          </li>
+          <li class='item' style="background-image: url('img/Screenshot 2023-12-29 at 5.27.23 PM.jpg')">
+            <div class='content'>
+              <h2 class='title'>"Product Engineer at Loyalty Juggernaut India Private Limited"</h2>
+              <p class='description'> Honored to accept an offer of employment as a Product Engineer at Loyalty Juggernaut India Private Limited, starting on or before November 1, 2021, with the initial placement in Hyderabad. Excited to contribute to the team and company's success. </p>
+              <!-- <button>Read More</button> -->
+            </div>
+          </li>
+        </ul>
+        <nav class='nav'>
+          <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+          <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+        </nav>
+      </main>
+      
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+<script>
+    const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+document.addEventListener('click',activate,false);
+</script>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <Vinay />  Certifications</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo-1.png">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <ul class='slider'>
+          <li class='item' style="background-image: url('img/11hr cert excelr-171.jpg')">
+            <div class='content'>
+              <h2 class='title'>"Data science for Masters"</h2>
+              <p class='description'> A Master's in Data Science focuses on advanced skills in analytics, machine learning, and data manipulation, preparing graduates for roles in diverse industries.  </p>
+              <!-- <button>Read More</button> -->
+            </div>
+          </li>
+          <li class='item' style="background-image: url('img/Cognitiveclass\ PY0101EN\ Certificate\ _\ Cognitive\ Class.jpg')">
+            <div class='content'>
+              <h2 class='title'>"Python101 for Data Science"</h2>
+              <p class='description'> Python for Data Science certification validates expertise in using Python for efficient data manipulation, analysis, and visualization, showcasing proficiency in essential libraries like NumPy and Pandas. </p>
+              <!-- <button>Read More</button> -->
+            </div>
+          </li>
+          <li class='item' style="background-image: url('img/CERTIFICATE.jpg')">
+            <div class='content'>
+              <h2 class='title'>"Angular JS to develop Web Apps Faster "</h2>
+              <p class='description'> AngularJS, a JavaScript framework, accelerates web app development by providing a structured architecture, reusable components, and two-way data binding. Its declarative approach simplifies code, streamlining the development process for faster and more efficient web applications.  </p>
+              <!-- <button>Read More</button> -->
+            </div>
+          </li>
+          <li class='item' style="background-image: url('img/sbi yono quiz certificate.jpg')">
+            <div class='content'>
+              <h2 class='title'>"SBI Numero Yono quiz 2020"</h2>
+              <p class='description'>
+                "SBI Numero Yono quiz 2020." The State Bank of India (SBI) might have organized a quiz related to their Yono (You Only Need One) platform, which is a digital banking and lifestyle app.              </p>
+              <!-- <button>Read More</button> -->
+            </div>
+          </li>
+          <li class='item' style="background-image: url('img/screencapture-mail-google-mail-u-0-2020-09-06-18_54_24.png')">
+            <div class='content'>
+              <h2 class='title'>"Building Online Services By AWS"</h2>
+              <p class='description'>
+                AWS simplifies building online services by offering scalable cloud infrastructure and a range of services, facilitating efficient development and deployment.              </p>
+              <!-- <button>Read More</button> -->
+            </div>
+          </li>
+          <!-- <li class='item' style="background-image: url('https://da.se/app/uploads/2015/09/simon-december1994.jpg')">
+            <div class='content'>
+              <h2 class='title'>"The Migration"</h2>
+              <p class='description'> Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+              praesentium nisi. Id laboriosam ipsam enim.  </p>
+              <button>Read More</button>
+            </div>
+          </li> -->
+        </ul>
+        <nav class='nav'>
+          <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+          <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+        </nav>
+      </main>
+      
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+<script>
+    const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+document.addEventListener('click',activate,false);
+</script>
+</html>
