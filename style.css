@@ -114,6 +114,13 @@ img {
 svg:not(:root) {
   overflow: hidden;
 }
+:root {
+  font-family: Inter, sans-serif !important;
+  font-feature-settings: 'liga' 1, 'calt' 1 !important; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif !important; }
+}
 figure {
   margin: 0;
 }
@@ -436,6 +443,7 @@ textarea.w-select {
   margin-top: 3px;
 }
 .w-container {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   max-width: 940px;
@@ -1801,7 +1809,7 @@ h1 {
   margin-right: 0px;
   margin-left: 0px;
   font-family: "Montserrat", sans-serif;
-  color: black;
+  color: #94A3B8;
   font-size: 99px;
   line-height: 87px;
   font-weight: 800;
@@ -1822,7 +1830,7 @@ h2 {
 h3 {
   margin-bottom: 19px;
   color: #262626;
-  font-size: 28px;
+  font-size: 16px;
   line-height: 30px;
   font-weight: 400;
 }
@@ -1894,12 +1902,14 @@ p {
   transform: translate(0px, 2px);
 }
 .header {
-  position: relative;
+  position: static;
   overflow-x: hidden;
   overflow-y: hidden;
   padding-bottom: 99px;
-  background-color: #3ec7c2;
+  background-color: #2c343f !important;
+  /* background: radial-gradient(ellipse 56% 100% at 50% 0%, #45e2fe 14%, #0000 80%); */
 }
+
 .header.page {
   padding-bottom: 47px;
 }
@@ -1915,10 +1925,10 @@ p {
   color: white;
 }
 .section {
-  padding-top: 100px;
+  /* padding-top: 100px; */
   padding-bottom: 100px;
-  background-color: white;
-  color: #616161;
+  background-color: #2c343f !important;
+  color: #94A3B8;
 }
 .section.lightgrey {
   background-color: #f2f2f2;
@@ -1939,7 +1949,8 @@ p {
   color: rgba(0, 0, 0, 0.74);
 }
 .section.accent.light {
-  background-color: #d4ecfc;
+  background-color: #2c343f !important;
+  /* background: radial-gradient(ellipse 39% 90% at 50% 0%, #45e2fe 38%, #0000 95%); */
 }
 .section.help {
   padding-top: 70px;
@@ -2009,6 +2020,7 @@ p {
 }
 .main-heading-wrapper {
   position: relative;
+  font-size: 40px;
   margin-top: 76px;
   margin-bottom: 76px;
 }
@@ -2031,11 +2043,12 @@ p {
   background-color: transparent;
 }
 .main-subtitle {
+  position: relative;
   padding-bottom: 57px;
   font-family: futura-pt, sans-serif;
-  color: black;
-  font-size: 28px;
-  line-height: 34px;
+  color: #94A3B8;
+  font-size: 16px;
+  line-height: 1.64;
   font-style: normal;
   font-weight: 400;
   text-align: left;
@@ -2120,7 +2133,7 @@ p {
   background-color: rgba(69, 230, 216, 0.29);
 }
 .white-heading {
-  color: white;
+  color: #94A3B8;
 }
 .coming-soon {
   position: absolute;
@@ -2196,7 +2209,7 @@ p {
   text-transform: uppercase;
 }
 .caption-text.on-white {
-  color: black;
+  color: #94A3B8;
   font-size: 13px;
   text-align: left;
   letter-spacing: 0.5px;
@@ -2221,21 +2234,21 @@ p {
   margin-right: 1px;
   margin-bottom: 1px;
   padding: 20px;
-  box-shadow: #e3e3e3 0px 0px 0px 1px;
+  box-shadow: #575569 0px 0px 0px 1px;
 }
 .left-heading {
   text-align: left;
 }
 .left-heading.left-border {
-  margin-bottom: 22px;
+  margin-bottom: 0px;
   padding-bottom: 70px;
   padding-left: 13px;
-  box-shadow: #e3e3e3 -1px 0px 0px 0px;
+  box-shadow: #575569 -1px 0px 0px 0px;
 }
 .left-heading.small-padding {
   margin-right: 29px;
   padding-bottom: 31px;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid #575569;
 }
 .trigger-heading {
   margin-bottom: 10px;
@@ -2298,6 +2311,7 @@ p {
   font-size: 38px;
   font-weight: 400;
   text-transform: none;
+  color: #94A3B8;
 }
 .share-wrapper {
   text-align: center;
@@ -2305,6 +2319,7 @@ p {
 .footer-paragraph {
   margin-bottom: 45px;
   font-size: 18px;
+  color: #94A3B8;
 }
 .social-big {
   display: inline-block;
@@ -2455,7 +2470,7 @@ p {
 }
 .property {
   display: inline-block;
-  color: black;
+  color: #94A3B8;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2463,12 +2478,12 @@ p {
 .example-left-col {
   padding-top: 40px;
   padding-right: 40px;
-  box-shadow: #dbdbdb 1px 0px 0px 0px;
+  box-shadow: #575569 1px 0px 0px 0px;
 }
 .example-right-col {
   padding-top: 40px;
   padding-left: 40px;
-  box-shadow: #dbdbdb 1px 0px 0px 0px inset;
+  box-shadow: #575569 1px 0px 0px 0px inset;
   text-align: left;
 }
 .mobile-error {
@@ -2706,13 +2721,14 @@ p {
 .video-wrapper {
   padding-bottom: 31px;
 }
+
 .video-title {
   margin-bottom: 7px;
   line-height: 25px;
   font-weight: 400;
 }
 .video-title.time {
-  color: rgba(0, 0, 0, 0.43);
+  color: #94A3B8;
 }
 .class {
   padding-right: 5px;
@@ -2725,7 +2741,7 @@ p {
   display: block;
   padding: 38px 23px 23px;
   border-radius: 2px;
-  background-color: white;
+  background-color: #2c343f;
   box-shadow: #00000017 0px 0px 0px 2px inset;
   -webkit-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
@@ -2736,16 +2752,29 @@ p {
   box-shadow:#0a0a0a 0px 0px 0px 2px inset;
 }
 .video-link:hover {
-  background-color: #f2f2f2;
+  background-color: #94A3B8;
+}
+.video-link:hover .circle-play {
+  background-color: #94A3B8; /* Change to your desired color */
+  transform: scale(1.2);
 }
 .video-link._1 {
   box-shadow: #8860d6 0px 0px 0px 2px inset;
 }
+.video-link._1:hover .circle-play {
+  background-color: #f5f0ff; /* Change to your desired color */
+  transform: scale(1.2);
+}
+
 .video-link._1:hover {
   background-color: #f5f0ff;
 }
 .video-link._2 {
   box-shadow: #3a8ff0 0px 0px 0px 2px inset;
+}
+.video-link_2:hover .circle-play {
+  background-color: #ebf4ff; /* Change to your desired color */
+  transform: scale(1.2);
 }
 .video-link._2:hover {
   background-color: #ebf4ff;
@@ -2756,8 +2785,16 @@ p {
 .video-link._3:hover {
   background-color: #e3fcff;
 }
+.video-link_3:hover .circle-play {
+  background-color: #e3fcff; /* Change to your desired color */
+  transform: scale(1.2);
+}
 .video-link._4 {
   box-shadow: #27c498 0px 0px 0px 2px inset;
+}
+.video-link_4:hover .circle-play {
+  background-color: #e3fff4; /* Change to your desired color */
+  transform: scale(1.2);
 }
 .video-link._4:hover {
   background-color: #e3fff4;
@@ -2767,6 +2804,10 @@ p {
 }
 .video-link._0:hover {
   background-color: #fcebf1;
+}
+.video-link_0:hover .circle-play {
+  background-color: #fcebf1; /* Change to your desired color */
+  transform: scale(1.2);
 }
 .circle-play {
   display: inline-block;
@@ -2780,11 +2821,14 @@ p {
   padding-left: 0px;
   border: 2px solid black;
   border-radius: 50px;
-  background-color: white;
+  background-color: #2c343f;
   text-align: center;
 }
 .circle-play._0 {
   border-color: #e83174;
+}
+.circle-play._0:hover {
+  background-color: #f5f0ff;
 }
 .circle-play._1 {
   border-color: #8860d6;
@@ -2925,7 +2969,7 @@ p {
   display: inline-block;
   margin-bottom: 13px;
   padding-bottom: 10px;
-  font-size: 28px;
+  font-size: 16px;
   text-align: left;
 }
 .note-text.ex.pink {
@@ -3400,7 +3444,7 @@ html.w-mod-js *[data-ix="awwwwwards"] {
   .example-left-col {
     padding-right: 10px;
     padding-bottom: 20px;
-    box-shadow: #dbdbdb 0px 1px 0px 0px;
+    box-shadow: #575569 0px 1px 0px 0px;
   }
   .example-right-col {
     padding-left: 10px;
@@ -3567,5 +3611,22 @@ html.w-mod-js *[data-ix="awwwwwards"] {
     width: 100%;
   }
 }
+
+
+
+.glowing-circle {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse 50% 50% at center, #125c5aa8 10%, #0d5158a3 40%, rgb(0 0 0 / 0%) 90%); /* Brighter center fading out */
+  /*box-shadow: 0 0 30px #ffffff, 0 0 50px #45e2fe, 0 0 70px rgba(114, 254, 243, 0.6);  Strong glow fading externally */
+  pointer-events: none;
+  opacity: 1;
+  transition: all 0.1s ease;
+}
+
+
+
 
 
