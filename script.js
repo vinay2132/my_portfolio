@@ -140,3 +140,21 @@ function newText() {
 }
 
 
+document.addEventListener('mousemove', (e) => {
+  const glowingCircle = document.querySelector('.glowing-circle');
+  
+  // Set the position of the glowing circle to the mouse position
+  glowingCircle.style.left = `${e.pageX - glowingCircle.offsetWidth / 2}px`;
+  glowingCircle.style.top = `${e.pageY - glowingCircle.offsetHeight / 2}px`;
+
+  // Add the active class to trigger the glowing effect
+  glowingCircle.classList.add('active');
+});
+
+document.addEventListener('mouseleave', () => {
+  // Remove the glowing effect when mouse leaves the screen
+  const glowingCircle = document.querySelector('.glowing-circle');
+  glowingCircle.classList.remove('active');
+});
+
+
