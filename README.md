@@ -7,7 +7,7 @@ Welcome to my GitHub portfolio! I'm Vinay Daram, a passionate Developer and Engi
 - 🌍 **Location**: Denton, Texas
 - 📧 **Email**: [daramvinay12@gmail.com](mailto:daramvinay12@gmail.com)
 - 📱 **Phone**: 940-629-3650
-- 🖥️ **Website**: [portafolio.com](http://portafolio.com)
+- 🖥️ **Website**: [portafolio.com](https://vinay2132.github.io/my_portfolio/)
 - 💼 **LinkedIn**: [in/daram-vinay](https://www.linkedin.com/in/daram-vinay)
 - 🧑‍💻 **GitHub**: [github.com/vinay2132](https://github.com/vinay2132)
 
