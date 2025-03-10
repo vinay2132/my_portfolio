@@ -699,47 +699,86 @@
         <code slot="code">
             class Vinay {
                 constructor() {
-                    this.name = 'Daram Vinay';
-                    this.dayOfBirth = '03/26/2000';
+                    this.name = 'Vinay Daram';
+                    this.location = 'Denton, Texas';
                     this.email = 'daramvinay12@gmail.com';
+                    this.phone = '+1 940 629 3650';
+                    this.portfolio = 'vinay2132.github.io/my-portfolio';
+                    this.linkedin = 'linkedin.com/in/daram-vinay';
+                    this.github = 'github.com/vinay2132';
                 }
             
                 workExperience() {
                     return [
-                    { 'Nov 2020 - JAN 2023' : Product Engineer at Loyalty Juggernaut }
-                    { 'Jan 2021 - Oct 2021' : Programmer Analyst Trainee at Cognizant }
-                    { 'Oct 2020 - Jan 2021': Product Marketing Manager at Global Counter Terrorism Council }
-                    { 'Jan 2020 - Oct 2020' : Full-stack Developer at Robakalam }
+                        { 'Nov 2024 - Present': Full Stack Developer at Find Me LLC },
+                        { 'Nov 2021 - Jan 2023': Senior Product Engineer at Loyalty Juggernaut India Private Limited },
+                        { 'Jan 2020 - Oct 2021': Programmer Analyst at Cognizant }
                     ];
                 }
             
                 education() {
                     return [
-                    { 'May 2015': Krishnaveni High School - Secondary School Certificate },
-                    { 'Aug 2015 – May 2017': School of Scholars - Central Board of Secondary Education }
-                    {'Aug 2017 – Aug 2021': TKR College of Engineering & Technology - Bachelors in Computer Science }
-                    {'Jan 2023': University of North Texas - Masters in Data Science}
+                        { 'Dec 2024': University of North Texas - Masters in Data Science (GPA: 3.5/4.0) },
+                        { 'Aug 2021': TKR College of Engineering & Technology - B.Tech in Computer Science (GPA: 3.2/4.0) }
                     ];
                 }
             
                 skills() {
-                    return { 
-                        {'Analytics Algorithms' - Regression Modeling, K-Mean, KNN, Decision Tree, Naïve Bayes, Random Forests}
-                        {'Software' - MATLAB, SAS, Tableau, TensorFlow, MySQL, Excel, Power BI}
-                        {'Deep Learning' - Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN), Supervised Learning}
-                        {'Programming Languages' - Python, C++, R, Java, MuleSoft, Salesforce, Node.js, XML}
-                        {'Project Management' - Agile, DevOps, CI/CD Pipelines}
-                        {'Backend Technologies' - Java, Python, RESTful APIs, Spring Boot, Docker, Kubernetes, Gradle, Xampp}
-                        {'Frontend Technologies' - HTML, CSS, JavaScript, React, Angular}
-                        {'Data Management' - Data Pipelines, Data Quality, Governance Rules, Compliance Policies}
-                        {'Business Intelligence' - SQL, Power BI, SAP, Tableau, Business Objects, Android Studio, PHPMyAdmin}
-                        {'Certifications' - Data Science Masters (Excelr),AngularJS to Develop Web Apps Faster (Brain o Vision),Python 101 for Data Science (Cognitive Class AI),Prompt Engineering for ChatGPT (Coursera)}
-                        {'Technologies Frameworks' - Linux, TensorFlow, NumPy, R for Statistical Analysis, Pandas}
-                        {'Technologies Frameworks' - Linux, TensorFlow, NumPy, R for Statistical Analysis, Pandas}
-                        {'Data Engineering Cloud' - Data Ingestion, Transformation, Structuring, Cloud Architecture (AWS, GCP), DevOps, CI/CD}
+                    return {
+                        'Data Analytics Algorithms': Regression Modelling, K-Mean, KNN, Decision Tree, Naïve Bayes, Random Forests,
+                        'Software': MATLAB, SAS, Tableau, TensorFlow, MySQL, Excel, Power BI,
+                        'Deep Learning': Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN), Supervised Learning,
+                        'Programming Languages': Python, C++, R, Java (Data Acquisition, EDA, Forecasting, Machine Learning), MuleSoft, Node.js,
+                        'Project Management': Agile, DevOps, CI/CD Pipelines,
+                        'Backend Technologies': Java, Python, RESTful APIs, Spring Boot, Docker, Kubernetes, Gradle, Xampp,
+                        'Frontend Technologies': HTML, CSS, JavaScript (React, Angular),
+                        'Business Intelligence Tools': SQL, Power BI, SAP, Tableau, Business Objects,
+                        'Certifications': 
+                            Data Science Masters (Excelr),
+                            AngularJS (Brain o Vision),
+                            Python 101 for Data Science (Cognitive Class AI),
+                            Prompt Engineering for ChatGPT (Coursera)
+                        ],
+                        'Technologies/Frameworks': Linux, TensorFlow, NumPy, R (Statistical Analysis), Pandas
                     };
                 }
+            
+                projects() {
+                    return [
+                        {
+                            'title': VR-Based COVID-19 Recovery Diet Plan Assistant,
+                            'description': Developed an interactive tool analyzing dietary patterns and visualizing global food supply metrics, improving data accessibility by 40%. Built a Virtual Reality AI Assistant for training, therapy, and patient support, increasing user engagement by 35%.',
+                            'technologies': Python, Streamlit, Plotly, Unity3D, Blender, Pandas, scikit-learn, Speech-to-Text APIs,
+                            'link': 'https://github.com/vinay2132/streamlit_covid'
+                        },
+                        {
+                            'title': Open-source AI Dubbing for Multilingual Translation,
+                            'description': Built an AI-powered multilingual dubbing platform, cutting localization costs by 30% and supporting six languages with 88% transcription accuracy and 80% translation correctness,
+                            'technologies': Python, Whisper ASR, Spacy, PyDub, MoviePy, Edge TTS, Google Cloud Translate, Text-to-Speech APIs,
+                            'link': 'https://github.com/vinay2132/AI-Video-Dubbing-Toolkit'
+                        },
+                        {
+                            'title': Deep Learning for Gender and Age Prediction,
+                            'description': Developed a CNN-based deep learning model to predict age and gender from facial images, achieving 90% accuracy and an MAE of 6.5 years.,
+                            'technologies': Python, CNN, TensorFlow, Pandas, Matplotlib, OpenCV, UTKFace Dataset,
+                            'link': 'https://github.com/vinay2132/CSCE_5218_PROJECT'
+                        },
+                        {
+                            'title': Fetal Distress via Cardiotocography,
+                            'description': Analyzed 2,126 fetal cardiotocography records using Random Forest, achieving an accuracy rate of nearly 95%. Built a Flask web interface enabling real-time forecasts of fetal distress for medical practitioners.',
+                            'technologies': HTML, CSS, Python, Machine Learning, Flask, Pickle,
+                            'link': 'https://github.com/vinay2132/Fetal-Distress-Classification-Based-on-Cardiotocography'
+                        },
+                        {
+                            'title': E-portal for Marketing,
+                            'description': Empowered medium-scale entrepreneurs, increasing client engagement by 40% and sales conversions by 27%. Developed a robust web platform with 99.9% uptime and 30% improvement in site performance.',
+                            'technologies': HTML, CSS, JavaScript, PHP, SQL,
+                            'link': 'https://github.com/vinay2132/collage-project'
+                        }
+                    ];
+                }
             }
+            
             
             
     </code>
