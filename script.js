@@ -125,7 +125,7 @@ function TextShuffle(_txt) {
 }
 
 var _index = -1;
-var _demoTexts = ["webapps", "ui/ux", "games"];
+var _demoTexts = ["App Developer", "UX/UI designer", "Game Developer","Software Engineer","Programmer Analyst", "Senior Product Engineer", "Full Stack Developer", "Data Analyst"];
 _shuffle = new TextShuffle(document.getElementById("main_container"));
 
 setTimeout(newText, 10000);

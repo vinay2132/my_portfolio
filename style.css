@@ -116,19 +116,12 @@ svg:not(:root) {
 }
 :root {
   font-family: Inter, sans-serif !important;
-<<<<<<< HEAD
-  font-feature-settings: 'liga' 1, 'calt' 1 !important; /* fix for Chrome */
-}
-@supports (font-variation-settings: normal) {
-  :root { font-family: InterVariable, sans-serif !important; }
-=======
   font-feature-settings: "liga" 1, "calt" 1 !important; /* fix for Chrome */
 }
 @supports (font-variation-settings: normal) {
   :root {
     font-family: InterVariable, sans-serif !important;
   }
->>>>>>> cc5b188 (Initial commit)
 }
 figure {
   margin: 0;
@@ -2037,12 +2030,6 @@ p {
 .without-code {
   color: white;
 }
-.main-heading-wrapper {
-  position: relative;
-  font-size: 40px;
-  margin-top: 76px;
-  margin-bottom: 76px;
-}
 .object {
   position: absolute;
   top: 44%;
@@ -2064,14 +2051,15 @@ p {
 .main-subtitle {
   position: relative;
   padding-bottom: 57px;
-  font-family: futura-pt, sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   color: #94A3B8;
-  font-size: 16px;
-  line-height: 1.64;
   font-style: normal;
-  font-weight: 400;
   text-align: left;
   text-transform: none;
+  font-size: 15px;
+  line-height: 35px;
+  font-weight: 300;
+  text-align: left;
 }
 .link {
   border-bottom: 1px solid #0082fc;
@@ -2773,6 +2761,7 @@ li::marker {
   margin-bottom: 12px;
   font-size: 35px;
   line-height: 40px;
+  font-family: "Doto", sans-serif;
 }
 .video-wrapper {
   padding-bottom: 31px;
@@ -2968,7 +2957,7 @@ li::marker {
   background-size: 49px;
   background-repeat: no-repeat;
   opacity: 0.75;
-  font-family: "kremlin-pro-web", sans-serif;
+  font-family: "Doto", sans-serif;;
   color: white;
   font-size: 29px;
   line-height: 34px;
@@ -2977,7 +2966,7 @@ li::marker {
 .header-1 {
   position: absolute;
   right: 0px;
-  bottom: 0px;
+  bottom: 338px;
   z-index: 2;
   width: 386px;
   padding-left: 56px;
@@ -2986,20 +2975,27 @@ li::marker {
   background-size: 47px;
   background-repeat: no-repeat;
   opacity: 0.75;
-  font-family: "kremlin-pro-web" !important;
+  /* font-family: "kremlin-pro-web" !important; */
   color: white;
   font-size: 29px;
   line-height: 34px;
   letter-spacing: 0.7px;
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 .note-text {
   display: inline-block;
-  font-family: "kremlin-pro-web", sans-serif;
+  font-family: "Doto", sans-serif;
   color: #4c9efc;
   font-size: 25px;
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.7px;
+  font-size: 25px !important;
 }
 .note-text.features {
   margin-top: 44px;
@@ -3035,6 +3031,7 @@ li::marker {
   background-size: 36px;
   background-repeat: no-repeat;
   color: #e83174;
+  font-size: 25px !important;
 }
 .note-text.ex.purple {
   margin-bottom: 25px;
@@ -3044,6 +3041,7 @@ li::marker {
   background-size: 27px;
   background-repeat: no-repeat;
   color: #8860d6;
+  font-size: 25px !important;
 }
 .note-text.ex.blue {
   margin-top: 13px;
@@ -3059,6 +3057,7 @@ li::marker {
 .note-text.ex.blue.turq {
   background-image: url(img/side_green_arrow.png);
   color: #23bdc2;
+  font-size: 25px !important;
 }
 .note-text.ex.close {
   display: block;
@@ -3683,3 +3682,49 @@ html.w-mod-js *[data-ix="awwwwwards"] {
   transition: all 0.1s ease;
 }
 
+
+.mainheading {
+  display: block;
+  max-width: 700px;
+  margin-top: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #E2E8F0;
+  font-size: 42px;
+  line-height: 60px;
+  font-weight: 200;
+  text-align: left;
+}
+
+
+.main-heading-wrapper {
+  position: static;
+  font-size: 40px;
+  margin-top: 56px;
+}
+.navbar {
+  width: 86%;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px !important;
+  padding-bottom: 25px !important;
+  background-color: #2c343f;
+}
+
+.w-nav {
+  position: static !important;
+  z-index: 1000;
+}
