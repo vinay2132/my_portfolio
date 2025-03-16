@@ -116,10 +116,19 @@ svg:not(:root) {
 }
 :root {
   font-family: Inter, sans-serif !important;
+<<<<<<< HEAD
   font-feature-settings: 'liga' 1, 'calt' 1 !important; /* fix for Chrome */
 }
 @supports (font-variation-settings: normal) {
   :root { font-family: InterVariable, sans-serif !important; }
+=======
+  font-feature-settings: "liga" 1, "calt" 1 !important; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif !important;
+  }
+>>>>>>> cc5b188 (Initial commit)
 }
 figure {
   margin: 0;
@@ -1794,6 +1803,7 @@ textarea.w-select {
   background-color: #ffdede;
 }
 
+<<<<<<< HEAD
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
@@ -1803,13 +1813,29 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
+=======
+   /* body {
+    font-family: "Doto", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 800; /* Adjust weight */
+    /* font-style: normal;
+    font-variation-settings: "ROND" 0; */
+  /* } */ 
+  h1 {
+    color: #E2E8F0;
+  }
+>>>>>>> cc5b188 (Initial commit)
 h1 {
   position: relative;
   z-index: 1;
   margin-right: 0px;
   margin-left: 0px;
   font-family: "Montserrat", sans-serif;
+<<<<<<< HEAD
   color: #94A3B8;
+=======
+  color: #94a3b8;
+>>>>>>> cc5b188 (Initial commit)
   font-size: 99px;
   line-height: 87px;
   font-weight: 800;
@@ -1820,7 +1846,11 @@ h2 {
   margin-left: 0px;
   padding-bottom: 92px;
   font-family: "Montserrat", sans-serif;
+<<<<<<< HEAD
   color: #262626;
+=======
+ 
+>>>>>>> cc5b188 (Initial commit)
   font-size: 31px;
   line-height: 35px;
   font-weight: 800;
@@ -1928,7 +1958,11 @@ p {
   /* padding-top: 100px; */
   padding-bottom: 100px;
   background-color: #2c343f !important;
+<<<<<<< HEAD
   color: #94A3B8;
+=======
+  color: #94a3b8;
+>>>>>>> cc5b188 (Initial commit)
 }
 .section.lightgrey {
   background-color: #f2f2f2;
@@ -2046,7 +2080,11 @@ p {
   position: relative;
   padding-bottom: 57px;
   font-family: futura-pt, sans-serif;
+<<<<<<< HEAD
   color: #94A3B8;
+=======
+  color: #94a3b8;
+>>>>>>> cc5b188 (Initial commit)
   font-size: 16px;
   line-height: 1.64;
   font-style: normal;
@@ -2133,7 +2171,11 @@ p {
   background-color: rgba(69, 230, 216, 0.29);
 }
 .white-heading {
+<<<<<<< HEAD
   color: #94A3B8;
+=======
+  color: #94a3b8;
+>>>>>>> cc5b188 (Initial commit)
 }
 .coming-soon {
   position: absolute;
@@ -2209,7 +2251,11 @@ p {
   text-transform: uppercase;
 }
 .caption-text.on-white {
+<<<<<<< HEAD
   color: #94A3B8;
+=======
+  color: #94a3b8;
+>>>>>>> cc5b188 (Initial commit)
   font-size: 13px;
   text-align: left;
   letter-spacing: 0.5px;
@@ -2300,6 +2346,52 @@ p {
   color: white;
   text-transform: uppercase;
 }
+<<<<<<< HEAD
+=======
+.bg-teal-400\/10 {
+  background-color: rgba(45, 212, 191, 0.1);
+}
+
+ul {
+  list-style: none; /* Ensures no bullet points */
+}
+
+li::marker {
+  display: none; /* Hides any remaining markers */
+}
+
+.font-medium {
+  font-weight: 500;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mr-1\.5 {
+  margin-right: 0.375rem;
+}
+
+.text-teal-300 {
+  --tw-text-opacity: 1;
+  color: rgb(94 234 212 / var(--tw-text-opacity));
+}
+>>>>>>> cc5b188 (Initial commit)
 .nav-link-scroll:hover {
   background-color: black;
   text-decoration: none;
@@ -2311,7 +2403,11 @@ p {
   font-size: 38px;
   font-weight: 400;
   text-transform: none;
+<<<<<<< HEAD
   color: #94A3B8;
+=======
+  color: #94a3b8;
+>>>>>>> cc5b188 (Initial commit)
 }
 .share-wrapper {
   text-align: center;
@@ -2319,7 +2415,11 @@ p {
 .footer-paragraph {
   margin-bottom: 45px;
   font-size: 18px;
+<<<<<<< HEAD
   color: #94A3B8;
+=======
+  color: #94a3b8;
+>>>>>>> cc5b188 (Initial commit)
 }
 .social-big {
   display: inline-block;
@@ -2470,7 +2570,11 @@ p {
 }
 .property {
   display: inline-block;
+<<<<<<< HEAD
   color: #94A3B8;
+=======
+  color: #94a3b8;
+>>>>>>> cc5b188 (Initial commit)
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2568,8 +2672,11 @@ p {
   text-align: left;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> cc5b188 (Initial commit)
 .hidden-text {
   /* overflow-x: hidden;
   overflow-y: hidden;
@@ -2587,7 +2694,10 @@ p {
 }
 
 .hidden-text-Iot-smart_order {
+<<<<<<< HEAD
 
+=======
+>>>>>>> cc5b188 (Initial commit)
   display: block !important;
   padding: 36px;
   border-radius: 2px;
@@ -2597,9 +2707,13 @@ p {
   text-align: left;
 }
 
+<<<<<<< HEAD
 
 .hidden-text-main {
 
+=======
+.hidden-text-main {
+>>>>>>> cc5b188 (Initial commit)
   display: block !important;
   padding: 36px;
   border-radius: 2px;
@@ -2607,7 +2721,10 @@ p {
   box-shadow: rgb(39 196 152) 0px 0px 0px 2px inset;
   color: rgb(137 219 192);
   text-align: left;
+<<<<<<< HEAD
 
+=======
+>>>>>>> cc5b188 (Initial commit)
 }
 
 .hidden-wrapper {
@@ -2728,7 +2845,11 @@ p {
   font-weight: 400;
 }
 .video-title.time {
+<<<<<<< HEAD
   color: #94A3B8;
+=======
+  color: #94a3b8;
+>>>>>>> cc5b188 (Initial commit)
 }
 .class {
   padding-right: 5px;
@@ -2749,6 +2870,7 @@ p {
   text-decoration: none;
 }
 .video-link {
+<<<<<<< HEAD
   box-shadow:#0a0a0a 0px 0px 0px 2px inset;
 }
 .video-link:hover {
@@ -2756,6 +2878,15 @@ p {
 }
 .video-link:hover .circle-play {
   background-color: #94A3B8; /* Change to your desired color */
+=======
+  box-shadow: #0a0a0a 0px 0px 0px 2px inset;
+}
+.video-link:hover {
+  background-color: #94a3b8;
+}
+.video-link:hover .circle-play {
+  background-color: #94a3b8; /* Change to your desired color */
+>>>>>>> cc5b188 (Initial commit)
   transform: scale(1.2);
 }
 .video-link._1 {
@@ -3025,7 +3156,10 @@ p {
   background-size: 38px;
   background-repeat: no-repeat;
   color: #27c498;
+<<<<<<< HEAD
 
+=======
+>>>>>>> cc5b188 (Initial commit)
 }
 .note-text.screen {
   display: block;
@@ -3265,7 +3399,11 @@ html.w-mod-js *[data-ix="awwwwwards"] {
     background-image: url(http://uploads.webflow.com/5317d67d660658b254000454/534e41de3392f3d0690001cf_green-arrow-mobile.png);
     background-position: 100% 100%;
     background-size: 38px; */
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> cc5b188 (Initial commit)
     display: block;
     margin-bottom: 19px;
     margin-left: 0px;
@@ -3597,14 +3735,23 @@ html.w-mod-js *[data-ix="awwwwwards"] {
   width: 45px;
   height: 45px;
 }
+<<<<<<< HEAD
 .code_base{
   margin-top: 0px; 
+=======
+.code_base {
+  margin-top: 0px;
+>>>>>>> cc5b188 (Initial commit)
   margin-bottom: 0px;
   margin-left: 125px;
   margin-right: 125px;
 
   @media (max-width: 740px) {
+<<<<<<< HEAD
     margin-top: 0px; 
+=======
+    margin-top: 0px;
+>>>>>>> cc5b188 (Initial commit)
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -3612,21 +3759,36 @@ html.w-mod-js *[data-ix="awwwwwards"] {
   }
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> cc5b188 (Initial commit)
 .glowing-circle {
   position: absolute;
   width: 700px;
   height: 700px;
   border-radius: 50%;
+<<<<<<< HEAD
   background: radial-gradient(ellipse 50% 50% at center, #125c5aa8 10%, #0d5158a3 40%, rgb(0 0 0 / 0%) 90%); /* Brighter center fading out */
+=======
+  background: radial-gradient(
+    ellipse 50% 50% at center,
+    #125c5aa8 10%,
+    #0d5158a3 40%,
+    rgb(0 0 0 / 0%) 90%
+  ); /* Brighter center fading out */
+>>>>>>> cc5b188 (Initial commit)
   /*box-shadow: 0 0 30px #ffffff, 0 0 50px #45e2fe, 0 0 70px rgba(114, 254, 243, 0.6);  Strong glow fading externally */
   pointer-events: none;
   opacity: 1;
   transition: all 0.1s ease;
 }
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> cc5b188 (Initial commit)
