@@ -1871,9 +1871,9 @@ p {
   margin-bottom: 15px;
   -webkit-transition-delay: initial;
   transition-delay: initial;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 30px;
 }
 .button {
   display: inline-block;
@@ -2107,6 +2107,11 @@ p {
   padding-right: 31px;
   padding-left: 31px;
   text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.mainfont {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
 }
 .feature-icon {
   margin-bottom: 25px;
@@ -2141,6 +2146,8 @@ p {
 }
 .white-heading {
   color: #94A3B8;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
 }
 .coming-soon {
   position: absolute;
@@ -3685,7 +3692,7 @@ html.w-mod-js *[data-ix="awwwwwards"] {
 
 .mainheading {
   display: block;
-  max-width: 700px;
+  max-width: 1000px;
   margin-top: 0px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -3704,7 +3711,7 @@ html.w-mod-js *[data-ix="awwwwwards"] {
   color: #E2E8F0;
   font-size: 42px;
   line-height: 60px;
-  font-weight: 200;
+  font-weight: 300;
   text-align: left;
 }
 
