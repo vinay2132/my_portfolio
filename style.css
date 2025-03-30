@@ -3672,23 +3672,23 @@ html.w-mod-js *[data-ix="awwwwwards"] {
   }
 }
 
-.glowing-circle {
-  position: absolute;
-  width: 700px;
-  height: 700px;
-  border-radius: 50%;
-  background: radial-gradient(
-    ellipse 50% 50% at center,
-    #125c5aa8 10%,
-    #0d5158a3 40%,
-    rgb(0 0 0 / 0%) 90%
-  ); /* Brighter center fading out */
-  /*box-shadow: 0 0 30px #ffffff, 0 0 50px #45e2fe, 0 0 70px rgba(114, 254, 243, 0.6);  Strong glow fading externally */
-  pointer-events: none;
-  opacity: 1;
-  transition: all 0.1s ease;
+@media (min-width: 1024px) {
+  .glowing-circle {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(
+      ellipse 50% 50% at center,
+      #125c5aa8 10%,
+      #0d5158a3 40%,
+      rgb(0 0 0 / 0%) 90%
+    );
+    pointer-events: none;
+    opacity: 1;
+    transition: all 0.1s ease;
+  }
 }
-
 
 .mainheading {
   display: block;
